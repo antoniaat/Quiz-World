@@ -37,6 +37,7 @@
             // 
             this.Login.AllowDrop = true;
             this.Login.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.Login.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
             this.Login.Font = new System.Drawing.Font("Calibri", 15F);
             this.Login.Location = new System.Drawing.Point(297, 284);
             this.Login.Name = "Login";
