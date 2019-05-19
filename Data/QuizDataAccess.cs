@@ -44,7 +44,6 @@ namespace Quiz_MDI_Application.Data
                 int minutes = reader.GetInt32(3);
                 int seconds = reader.GetInt32(4);
 
-
                 return new Quiz
                 {
                     Id = id,
@@ -52,7 +51,6 @@ namespace Quiz_MDI_Application.Data
                     Hours = hours,
                     Minutes = minutes,
                     Seconds = seconds,
-                    Hours = hours
                     //questions = questions
                 };
             });
