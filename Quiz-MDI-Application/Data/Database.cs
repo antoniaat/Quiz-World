@@ -1,4 +1,8 @@
-﻿using Quiz_MDI_Application.Data.Access;
+﻿using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using Quiz_MDI_Application.Data.Access;
+using Quiz_MDI_Application.Models;
 
 namespace Quiz_MDI_Application.Data
 {
@@ -6,6 +10,8 @@ namespace Quiz_MDI_Application.Data
     {
         public const string ConnectionString =
             "Server=.\\SQLEXPRESS;Database=QuizMDI;Integrated Security=False;Trusted_Connection=True;";
+
+        public static User currentlyLoggedInUser;
 
         public static void Initialize()
         {
@@ -31,5 +37,19 @@ namespace Quiz_MDI_Application.Data
         public static AnswerDataAccess Answers { get; private set; }
 
         public static QuizResultDataAccess QuizResults { get; private set; }
+
+        public static User Login(string username, string password)
+        {
+            currentlyLoggedInUser = Users.ReadUsers().FirstOrDefault(user => user.Username == username && user.Password == password);
+            return currentlyLoggedInUser;
+        }
+
+        public static void Logout()
+        {
+            if (currentlyLoggedInUser != null)
+            {
+                currentlyLoggedInUser = null;
+            }
+        }
     }
 }

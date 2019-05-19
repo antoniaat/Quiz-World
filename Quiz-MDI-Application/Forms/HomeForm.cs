@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using Quiz_MDI_Application.Data;
 
 namespace Quiz_MDI_Application.Forms
 {
-    public partial class Home : Form
+    public partial class HomeForm : Form
     {
-        public Home()
+        public HomeForm()
         {
             InitializeComponent();
         }
@@ -18,6 +19,12 @@ namespace Quiz_MDI_Application.Forms
         private void ResultsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Database.Logout();
         }
     }
 }

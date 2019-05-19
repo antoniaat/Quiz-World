@@ -36,7 +36,7 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.registerButton = new System.Windows.Forms.Button();
             this.repeatPasswordLabel = new System.Windows.Forms.Label();
-            this.repeatPasswordTextbox = new System.Windows.Forms.TextBox();
+            this.repeatPasswordTextBox = new System.Windows.Forms.TextBox();
             this.loginLinkLabel = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -101,6 +101,7 @@
             this.registerButton.TabIndex = 12;
             this.registerButton.Text = "REGISTER";
             this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // repeatPasswordLabel
             // 
@@ -113,12 +114,12 @@
             this.repeatPasswordLabel.TabIndex = 13;
             this.repeatPasswordLabel.Text = "Repeat password:";
             // 
-            // repeatPasswordTextbox
+            // repeatPasswordTextBox
             // 
-            this.repeatPasswordTextbox.Location = new System.Drawing.Point(82, 443);
-            this.repeatPasswordTextbox.Name = "repeatPasswordTextbox";
-            this.repeatPasswordTextbox.Size = new System.Drawing.Size(243, 36);
-            this.repeatPasswordTextbox.TabIndex = 14;
+            this.repeatPasswordTextBox.Location = new System.Drawing.Point(82, 443);
+            this.repeatPasswordTextBox.Name = "repeatPasswordTextBox";
+            this.repeatPasswordTextBox.Size = new System.Drawing.Size(243, 36);
+            this.repeatPasswordTextBox.TabIndex = 14;
             // 
             // loginLinkLabel
             // 
@@ -142,7 +143,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1104, 664);
             this.Controls.Add(this.loginLinkLabel);
-            this.Controls.Add(this.repeatPasswordTextbox);
+            this.Controls.Add(this.repeatPasswordTextBox);
             this.Controls.Add(this.repeatPasswordLabel);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.passwordTextBox);
@@ -169,7 +170,7 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label repeatPasswordLabel;
-        private System.Windows.Forms.TextBox repeatPasswordTextbox;
+        private System.Windows.Forms.TextBox repeatPasswordTextBox;
         private System.Windows.Forms.LinkLabel loginLinkLabel;
     }
 }

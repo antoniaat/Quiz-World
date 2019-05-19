@@ -1,4 +1,4 @@
-﻿namespace Quiz_MDI_Application
+﻿namespace Quiz_MDI_Application.Forms
 {
     partial class LoginForm
     {
@@ -94,6 +94,7 @@
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "LOGIN";
             this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // loginFormTitle
             // 

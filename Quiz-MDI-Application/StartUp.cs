@@ -14,9 +14,9 @@ namespace Quiz_MDI_Application
         public static void Main()
         {
             Database.Initialize();
-            //            Application.EnableVisualStyles();
-            //            Application.SetCompatibleTextRenderingDefault(false);
-            //            Application.Run(new MainForm());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainForm());
         }
     }
 }
