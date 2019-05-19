@@ -45,18 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Access\AnswerDataAccess.cs" />
-    <Compile Include="Data\Database.cs" />
-    <Compile Include="Data\Access\DataAccess.cs" />
-    <Compile Include="Data\Access\QuestionDataAccess.cs" />
-    <Compile Include="Data\Access\QuizDataAccess.cs" />
-    <Compile Include="Data\Access\QuizResultDataAccess.cs" />
-    <Compile Include="Data\Access\UserDataAccess.cs" />
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\QuestionDataAccess.cs" />
+    <Compile Include="Data\QuizDataAccess.cs" />
+    <Compile Include="Data\QuizRezultDataAccess.cs" />
+    <Compile Include="Data\UserDataAccess.cs" />
+    <Compile Include="Forms\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuizRezults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuizRezults.Designer.cs">
+      <DependentUpon>QuizRezults.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
@@ -78,8 +88,14 @@
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
+    <EmbeddedResource Include="Forms\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuizRezults.resx">
+      <DependentUpon>QuizRezults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
@@ -121,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\quiz-app-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
