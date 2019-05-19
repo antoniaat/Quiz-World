@@ -22,9 +22,9 @@ namespace Quiz_MDI_Application
             DataAccess da = new DataAccess();
             //da.CreateUser(tonka);
 
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MainForm());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainForm());
         }
     }
 }
