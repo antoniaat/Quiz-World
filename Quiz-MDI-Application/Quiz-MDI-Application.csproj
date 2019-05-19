@@ -105,5 +105,14 @@
   <ItemGroup>
     <None Include="Resources\ranger-4df6c1b6.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\175801.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz-app-background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

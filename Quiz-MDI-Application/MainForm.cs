@@ -27,5 +27,10 @@ namespace Quiz_MDI_Application
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
         }
+
+        private void MainFormTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
