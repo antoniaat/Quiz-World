@@ -13,20 +13,10 @@ namespace Quiz_MDI_Application
         [STAThread]
         public static void Main()
         {
-            //User tonka = new User
-            //{
-            //    Id = 1,
-            //    Username = "Tonka",
-            //    Password = "Raponka",
-            //    Role = UserRole.Admin
-            //};
-
-            //DataAccess da = new DataAccess();
-            //da.CreateUser(tonka);
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Database.Initialize();
+            //            Application.EnableVisualStyles();
+            //            Application.SetCompatibleTextRenderingDefault(false);
+            //            Application.Run(new MainForm());
         }
     }
 }

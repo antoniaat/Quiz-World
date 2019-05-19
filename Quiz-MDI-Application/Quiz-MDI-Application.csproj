@@ -45,11 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DataAccess.cs" />
-    <Compile Include="Data\QuestionDataAccess.cs" />
-    <Compile Include="Data\QuizDataAccess.cs" />
-    <Compile Include="Data\QuizRezultDataAccess.cs" />
-    <Compile Include="Data\UserDataAccess.cs" />
+    <Compile Include="Data\Access\AnswerDataAccess.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\Access\DataAccess.cs" />
+    <Compile Include="Data\Access\QuestionDataAccess.cs" />
+    <Compile Include="Data\Access\QuizDataAccess.cs" />
+    <Compile Include="Data\Access\QuizResultDataAccess.cs" />
+    <Compile Include="Data\Access\UserDataAccess.cs" />
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
