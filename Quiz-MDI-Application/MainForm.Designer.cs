@@ -1,6 +1,6 @@
-﻿namespace MDI
+﻿namespace Quiz_MDI_Application
 {
-    partial class ChildForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(800, 534);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // ChildForm
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 534);
-            this.Controls.Add(this.richTextBox1);
-            this.Name = "ChildForm";
-            this.Text = "New Document";
-            this.Load += new System.EventHandler(this.ChildForm_Load);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "MainForm";
+            this.Text = "Quiz";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
+

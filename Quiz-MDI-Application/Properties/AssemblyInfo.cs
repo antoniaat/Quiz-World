@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MDI")]
+[assembly: AssemblyTitle("Quiz-MDI-Application")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MDI")]
+[assembly: AssemblyProduct("Quiz-MDI-Application")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ebe26af3-14f8-4bcb-b40a-f6f094bc0787")]
+[assembly: Guid("e7889801-b654-4dc2-8a6f-95de5148137a")]
 
 // Version information for an assembly consists of the following four values:
 //

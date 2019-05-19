@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EBE26AF3-14F8-4BCB-B40A-F6F094BC0787}</ProjectGuid>
+    <ProjectGuid>{E7889801-B654-4DC2-8A6F-95DE5148137A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MDI</RootNamespace>
-    <AssemblyName>MDI</AssemblyName>
+    <RootNamespace>Quiz_MDI_Application</RootNamespace>
+    <AssemblyName>Quiz-MDI-Application</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,51 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBookForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddBookForm.Designer.cs">
-      <DependentUpon>AddBookForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Book.cs" />
-    <Compile Include="ChildForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForm.Designer.cs">
-      <DependentUpon>ChildForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="City.cs" />
-    <Compile Include="Library.cs" />
-    <Compile Include="ListBooks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListBooks.Designer.cs">
-      <DependentUpon>ListBooks.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\QuestionDataAccess.cs" />
+    <Compile Include="Data\QuizDataAccess.cs" />
+    <Compile Include="Data\QuizRezultDataAccess.cs" />
+    <Compile Include="Data\UserDataAccess.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Models\Answer.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\Quiz.cs" />
+    <Compile Include="Models\QuizResult.cs" />
+    <Compile Include="Models\UserRole.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AddBookForm.resx">
-      <DependentUpon>AddBookForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm.resx">
-      <DependentUpon>ChildForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListBooks.resx">
-      <DependentUpon>ListBooks.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Models\User.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,9 +76,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegisterForm.resx">
-      <DependentUpon>RegisterForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

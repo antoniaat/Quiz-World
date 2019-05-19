@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MDI.Properties
+namespace Quiz_MDI_Application.Properties
 {
 
 

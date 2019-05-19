@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MDI
+namespace Quiz_MDI_Application
 {
-    public partial class RegisterForm : Form
+    public partial class MainForm : Form
     {
-        public RegisterForm()
+        public MainForm()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
     }
 }
