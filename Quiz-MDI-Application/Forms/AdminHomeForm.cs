@@ -33,28 +33,35 @@ namespace Quiz_MDI_Application.Forms
 
             foreach (var quiz in quizzes)
             {
-                Button quizInfo = new Button();
+                Button quizDetailsButton = new Button();
 
-                quizInfo.Text = quiz.Name + " - " + quiz.Hours + "h. " + quiz.Minutes + "m. " + quiz.Seconds + "s. ";
-                quizInfo.Font = new Font("Calibri", 20.0f);
-                quizInfo.Size = new Size(labelSizeX, labelSizeY);
-                quizInfo.Location = new Point(currentLabelPositionX, currentLabelPositionY);
+                quizDetailsButton.Text = quiz.Name + " - " + quiz.Hours + "h. " + quiz.Minutes + "m. " + quiz.Seconds + "s. ";
+                quizDetailsButton.Font = new Font("Calibri", 20.0f);
+                quizDetailsButton.Size = new Size(labelSizeX, labelSizeY);
+                quizDetailsButton.Location = new Point(currentLabelPositionX, currentLabelPositionY);
+                quizDetailsButton.Click += new EventHandler(QuizDetailsButton_Click);
 
-                Button quizButton = new Button();
+                Button addQuestion = new Button();
 
-                quizButton.Name = "AddQuestionsButton";
-                quizButton.Text = "Add Questions";
-                quizButton.Font = new Font("Calibri", 20.0f);
-                quizButton.Size = new Size(buttonSizeX, buttonSizeY);
-                quizButton.Location = new Point(currentButtonPositionX, currentButtonPositionY);
-                quizButton.Click += (obj, args) => AddQuestionToQuiz(obj, args, quiz);
+                addQuestion.Name = "AddQuestionsButton";
+                addQuestion.Text = "Add Question";
+                addQuestion.Font = new Font("Calibri", 20.0f);
+                addQuestion.Size = new Size(buttonSizeX, buttonSizeY);
+                addQuestion.Location = new Point(currentButtonPositionX, currentButtonPositionY);
+                addQuestion.Click += (obj, args) => AddQuestionToQuiz(obj, args, quiz);
 
-                this.Controls.Add(quizInfo);
-                this.Controls.Add(quizButton);
+                this.Controls.Add(quizDetailsButton);
+                this.Controls.Add(addQuestion);
 
                 currentLabelPositionY += 60;
                 currentButtonPositionY += 60;
             }
+        }
+
+        private void QuizDetailsButton_Click(object sender, EventArgs e)
+        {
+            QuizDetails questionDetailsForm = new QuizDetails();
+            questionDetailsForm.ShowDialog();
         }
 
         private void AddQuestionToQuiz(object sender, EventArgs e, Quiz quiz)
@@ -69,8 +76,6 @@ namespace Quiz_MDI_Application.Forms
                     Quiz = quiz
                 });
             }
-
-
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)

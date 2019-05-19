@@ -18,10 +18,10 @@ namespace Quiz_MDI_Application.Forms.Common
             label.Text = promptText;
             textBox.Text = value;
 
-            addButton.Text = "ADD";
+            addButton.Text = "Add";
             addButton.Name = "addButton";
             buttonCancel.Text = "Cancel";
-            buttonCancel.Text = "cancelButton";
+            addButton.Name = "cancelButton";
 
             addButton.DialogResult = DialogResult.OK;
             buttonCancel.DialogResult = DialogResult.Cancel;
