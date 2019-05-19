@@ -122,6 +122,7 @@
             this.registerLink.TabIndex = 7;
             this.registerLink.TabStop = true;
             this.registerLink.Text = "Don\'t Have an Account?";
+            this.registerLink.VisitedLinkColor = System.Drawing.Color.DimGray;
             this.registerLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RegisterLink_LinkClicked);
             // 
             // LoginForm
