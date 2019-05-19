@@ -1,4 +1,5 @@
 ﻿using Quiz_MDI_Application.Models;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace Quiz_MDI_Application.Data

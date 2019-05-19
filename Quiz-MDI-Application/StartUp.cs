@@ -1,5 +1,7 @@
 ﻿using Quiz_MDI_Application.Data;
 using Quiz_MDI_Application.Models;
+using System;
+using System.Windows.Forms;
 
 namespace Quiz_MDI_Application
 {
@@ -8,18 +10,18 @@ namespace Quiz_MDI_Application
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        //[STAThread]
+        [STAThread]
         public static void Main()
         {
-            User tonka = new User
-            {
-                Id = 1,
-                Username = "Tonka",
-                Password = "Raponka",
-                Role = UserRole.Admin
-            };
+            //User tonka = new User
+            //{
+            //    Id = 1,
+            //    Username = "Tonka",
+            //    Password = "Raponka",
+            //    Role = UserRole.Admin
+            //};
 
-            DataAccess da = new DataAccess();
+            //DataAccess da = new DataAccess();
             //da.CreateUser(tonka);
 
             Application.EnableVisualStyles();
