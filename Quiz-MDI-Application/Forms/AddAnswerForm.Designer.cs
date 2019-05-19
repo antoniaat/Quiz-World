@@ -80,7 +80,7 @@
             this.addAnswerButton.TabIndex = 3;
             this.addAnswerButton.Text = "ADD ANSWER";
             this.addAnswerButton.UseVisualStyleBackColor = true;
-            this.addAnswerButton.Click += new System.EventHandler(this.addAnswerButton_Click);
+            this.addAnswerButton.Click += new System.EventHandler(this.AddAnswerButton_Click);
             // 
             // AddAnswerForm
             // 

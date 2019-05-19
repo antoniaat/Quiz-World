@@ -65,14 +65,14 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(114, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.exitToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(117, 28);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -92,7 +92,7 @@
             // 
             this.resultsToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
-            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
             this.resultsToolStripMenuItem.Text = "&Results";
             this.resultsToolStripMenuItem.Click += new System.EventHandler(this.ResultsToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@
             // 
             this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
@@ -118,7 +118,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(13, 15, 13, 15);
             this.Name = "HomeForm";
-            this.Text = "HomeForm";
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

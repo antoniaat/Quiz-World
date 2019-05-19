@@ -6,7 +6,7 @@ namespace Quiz_MDI_Application.Forms
 {
     public partial class AddAnswerForm : Form
     {
-        private Question question;
+        private Models.Question question;
 
         public AddAnswerForm(Question question)
         {
@@ -14,7 +14,7 @@ namespace Quiz_MDI_Application.Forms
             InitializeComponent();
         }
 
-        private void addAnswerButton_Click(object sender, System.EventArgs e)
+        private void AddAnswerButton_Click(object sender, System.EventArgs e)
         {
             var text = answerTextBox.Text;
             var isCorrect = correctRadioButton.Checked;

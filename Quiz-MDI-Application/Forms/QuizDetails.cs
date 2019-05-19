@@ -17,7 +17,7 @@ namespace Quiz_MDI_Application.Forms
 
         private void QuestionDetails_Load(object sender, EventArgs e)
         {
-            ICollection<Question> questions = Database.Questions.ReadQuestions(true);
+            ICollection<Models.Question> questions = Database.Questions.ReadQuestions(true);
 
             int currentLabelPositionX = 60;
             int currentLabelPositionY = 60;
@@ -63,7 +63,7 @@ namespace Quiz_MDI_Application.Forms
             }
         }
 
-        private void AddAnswerToQuestion(object sender, EventArgs e, Question question)
+        private void AddAnswerToQuestion(object sender, EventArgs e, Models.Question question)
         {
             AddAnswerForm form = new AddAnswerForm(question);
             form.Show();

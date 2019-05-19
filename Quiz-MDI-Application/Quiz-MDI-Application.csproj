@@ -83,17 +83,23 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionForm.Designer.cs">
+      <DependentUpon>QuestionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\QuizDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\QuizDetails.Designer.cs">
       <DependentUpon>QuizDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\QuizRezults.cs">
+    <Compile Include="Forms\QuizResults.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\QuizRezults.Designer.cs">
-      <DependentUpon>QuizRezults.cs</DependentUpon>
+    <Compile Include="Forms\QuizResults.Designer.cs">
+      <DependentUpon>QuizResults.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegisterForm.cs">
       <SubType>Form</SubType>
@@ -130,11 +136,14 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionForm.resx">
+      <DependentUpon>QuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuizDetails.resx">
       <DependentUpon>QuizDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\QuizRezults.resx">
-      <DependentUpon>QuizRezults.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\QuizResults.resx">
+      <DependentUpon>QuizResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>

@@ -17,7 +17,7 @@ namespace Quiz_MDI_Application.Forms
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
-            ICollection<Quiz> quizzes = Database.Quizzes.ReadQuizzes(false);
+            ICollection<Quiz> quizzes = Database.Quizzes.ReadQuizzes();
 
             int currentLabelPositionX = 60;
             int currentLabelPositionY = 60;
@@ -46,7 +46,7 @@ namespace Quiz_MDI_Application.Forms
                 quizButton.Font = new Font("Calibri", 20.0f);
                 quizButton.Size = new Size(buttonSizeX, buttonSizeY);
                 quizButton.Location = new Point(currentButtonPositionX, currentButtonPositionY);
-                //quizButton.Click += ""
+                quizButton.Click += (obj, args) => StartQuiz(obj, args, quiz);
 
                 this.Controls.Add(quizLabel);
                 this.Controls.Add(quizButton);
@@ -54,6 +54,13 @@ namespace Quiz_MDI_Application.Forms
                 currentLabelPositionY += 60;
                 currentButtonPositionY += 60;
             }
+        }
+
+        private void StartQuiz(object sender, EventArgs e, Quiz quiz)
+        {
+            QuestionForm questionForm = new QuestionForm(quiz.Questions);
+            questionForm.Show();
+            this.Visible = false;
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)

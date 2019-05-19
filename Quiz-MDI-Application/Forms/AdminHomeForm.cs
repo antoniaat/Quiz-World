@@ -72,7 +72,7 @@ namespace Quiz_MDI_Application.Forms
 
             if (InputBox.InputBoxContainer("New Question", "", ref value) == DialogResult.OK)
             {
-                Database.Questions.CreateQuestion(new Question
+                Database.Questions.CreateQuestion(new Models.Question
                 {
                     Text = value,
                     Quiz = quiz
