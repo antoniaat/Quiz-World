@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Quiz_MDI_Application.Forms
 {
-    public partial class AdminHomeForm : Form
+    public partial class AdminHomeForm : System.Windows.Forms.Form
     {
         public AdminHomeForm()
         {
@@ -25,6 +25,13 @@ namespace Quiz_MDI_Application.Forms
         {
             this.Visible = false;
             Database.Logout();
+        }
+
+        private void CreateQuizToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            CreateQuizForm quizForm = new CreateQuizForm();
+            quizForm.ShowDialog();
         }
     }
 }

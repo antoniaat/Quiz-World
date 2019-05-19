@@ -37,9 +37,6 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createQuizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allQuizesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,8 +66,8 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(113, 28);
+            this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
@@ -87,23 +84,20 @@
             // resultsToolStripMenuItem
             // 
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
-            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
             this.resultsToolStripMenuItem.Text = "&Results";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // administrationToolStripMenuItem
             // 
             this.administrationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createQuizToolStripMenuItem,
-            this.allQuizesToolStripMenuItem,
-            this.allResultsToolStripMenuItem,
-            this.allUsersToolStripMenuItem});
+            this.createQuizToolStripMenuItem});
             this.administrationToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.administrationToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.admin_ic;
             this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
@@ -115,24 +109,7 @@
             this.createQuizToolStripMenuItem.Name = "createQuizToolStripMenuItem";
             this.createQuizToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.createQuizToolStripMenuItem.Text = "&Create Quiz";
-            // 
-            // allQuizesToolStripMenuItem
-            // 
-            this.allQuizesToolStripMenuItem.Name = "allQuizesToolStripMenuItem";
-            this.allQuizesToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
-            this.allQuizesToolStripMenuItem.Text = "&All Quizes";
-            // 
-            // allResultsToolStripMenuItem
-            // 
-            this.allResultsToolStripMenuItem.Name = "allResultsToolStripMenuItem";
-            this.allResultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
-            this.allResultsToolStripMenuItem.Text = "&All Results";
-            // 
-            // allUsersToolStripMenuItem
-            // 
-            this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
-            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
-            this.allUsersToolStripMenuItem.Text = "&All Users";
+            this.createQuizToolStripMenuItem.Click += new System.EventHandler(this.CreateQuizToolStripMenuItem_Click);
             // 
             // AdminHomeForm
             // 
@@ -166,8 +143,5 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createQuizToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allQuizesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allResultsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
     }
 }
