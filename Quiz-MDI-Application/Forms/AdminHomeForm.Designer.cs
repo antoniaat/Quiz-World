@@ -36,6 +36,10 @@
             this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createQuizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allQuizesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,11 +99,40 @@
             // 
             // administrationToolStripMenuItem
             // 
+            this.administrationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createQuizToolStripMenuItem,
+            this.allQuizesToolStripMenuItem,
+            this.allResultsToolStripMenuItem,
+            this.allUsersToolStripMenuItem});
             this.administrationToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.administrationToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.admin_ic;
             this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
             this.administrationToolStripMenuItem.Size = new System.Drawing.Size(157, 27);
             this.administrationToolStripMenuItem.Text = "&Administration";
+            // 
+            // createQuizToolStripMenuItem
+            // 
+            this.createQuizToolStripMenuItem.Name = "createQuizToolStripMenuItem";
+            this.createQuizToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.createQuizToolStripMenuItem.Text = "&Create Quiz";
+            // 
+            // allQuizesToolStripMenuItem
+            // 
+            this.allQuizesToolStripMenuItem.Name = "allQuizesToolStripMenuItem";
+            this.allQuizesToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allQuizesToolStripMenuItem.Text = "&All Quizes";
+            // 
+            // allResultsToolStripMenuItem
+            // 
+            this.allResultsToolStripMenuItem.Name = "allResultsToolStripMenuItem";
+            this.allResultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allResultsToolStripMenuItem.Text = "&All Results";
+            // 
+            // allUsersToolStripMenuItem
+            // 
+            this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
+            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allUsersToolStripMenuItem.Text = "&All Users";
             // 
             // AdminHomeForm
             // 
@@ -132,5 +165,9 @@
         private System.Windows.Forms.ToolStripMenuItem resultsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createQuizToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allQuizesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allResultsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
     }
 }

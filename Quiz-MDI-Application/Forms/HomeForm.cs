@@ -26,5 +26,10 @@ namespace Quiz_MDI_Application.Forms
             this.Visible = false;
             Database.Logout();
         }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

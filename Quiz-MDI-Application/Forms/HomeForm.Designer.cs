@@ -84,8 +84,9 @@
             this.profileToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profileToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.user_icon;
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(92, 27);
-            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
+            this.profileToolStripMenuItem.Text = "&User";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // resultsToolStripMenuItem
             // 
