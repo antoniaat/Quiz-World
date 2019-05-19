@@ -46,6 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\QuestionDataAccess.cs" />
+    <Compile Include="Data\QuizDataAccess.cs" />
+    <Compile Include="Data\QuizRezultDataAccess.cs" />
+    <Compile Include="Data\UserDataAccess.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,7 +61,7 @@
     <Compile Include="Models\Quiz.cs" />
     <Compile Include="Models\QuizResult.cs" />
     <Compile Include="Models\UserRole.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
     <EmbeddedResource Include="MainForm.resx">
