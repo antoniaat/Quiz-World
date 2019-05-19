@@ -32,7 +32,9 @@ namespace Quiz_MDI_Application.Forms
             }
             else
             {
-                // TODO: Admin Form
+                this.Visible = false;
+                AdminHomeForm adminHomeForm = new AdminHomeForm();
+                adminHomeForm.ShowDialog();
             }
         }
     }
