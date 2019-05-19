@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quiz_MDI_Application.Forms
 {
-    public partial class QuizRezults : Form
+    public partial class QuizResults : Form
     {
-        public QuizRezults()
+        public QuizResults()
         {
             InitializeComponent();
         }
