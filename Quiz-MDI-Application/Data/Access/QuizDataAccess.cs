@@ -78,7 +78,7 @@ namespace Quiz_MDI_Application.Data.Access
         {
             ICollection<Quiz> quizzes = this.ReadQuizzes(false);
 
-            return quizzes.Any() ? quizzes.Max(quiz => quiz.Id) : 1;
+            return quizzes.Any() ? quizzes.Max(quiz => quiz.Id) + 1 : 1;
         }
     }
 }

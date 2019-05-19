@@ -61,7 +61,7 @@ namespace Quiz_MDI_Application.Data.Access
         {
             ICollection<User> users = this.ReadUsers();
 
-            return users.Any() ? users.Max(user => user.Id) : 1;
+            return users.Any() ? users.Max(user => user.Id) + 1: 1;
         }
     }
 }
