@@ -38,10 +38,12 @@
             this.Login.AllowDrop = true;
             this.Login.BackColor = System.Drawing.SystemColors.HighlightText;
             this.Login.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
-            this.Login.Font = new System.Drawing.Font("Calibri", 15F);
-            this.Login.Location = new System.Drawing.Point(304, 232);
+            this.Login.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Login.Image = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
+            this.Login.Location = new System.Drawing.Point(272, 219);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(129, 53);
+            this.Login.Size = new System.Drawing.Size(158, 77);
             this.Login.TabIndex = 0;
             this.Login.Text = "LOGIN";
             this.Login.UseVisualStyleBackColor = false;
@@ -51,11 +53,12 @@
             // 
             this.registerForm.BackColor = System.Drawing.SystemColors.HighlightText;
             this.registerForm.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.quiz_app_background;
-            this.registerForm.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerForm.ForeColor = System.Drawing.Color.Black;
-            this.registerForm.Location = new System.Drawing.Point(459, 232);
+            this.registerForm.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerForm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registerForm.Image = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
+            this.registerForm.Location = new System.Drawing.Point(456, 219);
             this.registerForm.Name = "registerForm";
-            this.registerForm.Size = new System.Drawing.Size(137, 53);
+            this.registerForm.Size = new System.Drawing.Size(157, 77);
             this.registerForm.TabIndex = 1;
             this.registerForm.Text = "REGISTER";
             this.registerForm.UseVisualStyleBackColor = false;

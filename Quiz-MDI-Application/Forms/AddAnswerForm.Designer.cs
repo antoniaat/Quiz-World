@@ -71,12 +71,14 @@
             // 
             // addAnswerButton
             // 
+            this.addAnswerButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
             this.addAnswerButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addAnswerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addAnswerButton.Location = new System.Drawing.Point(60, 342);
             this.addAnswerButton.Name = "addAnswerButton";
-            this.addAnswerButton.Size = new System.Drawing.Size(177, 56);
+            this.addAnswerButton.Size = new System.Drawing.Size(205, 72);
             this.addAnswerButton.TabIndex = 3;
-            this.addAnswerButton.Text = "Add Answer";
+            this.addAnswerButton.Text = "ADD ANSWER";
             this.addAnswerButton.UseVisualStyleBackColor = true;
             // 
             // AddAnswerForm

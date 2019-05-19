@@ -96,6 +96,8 @@
             // 
             this.registerButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
             this.registerButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.registerButton.Image = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
             this.registerButton.Location = new System.Drawing.Point(82, 507);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(134, 51);

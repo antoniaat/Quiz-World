@@ -89,6 +89,8 @@
             // 
             this.loginButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
             this.loginButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginButton.Image = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
             this.loginButton.Location = new System.Drawing.Point(125, 449);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(113, 51);

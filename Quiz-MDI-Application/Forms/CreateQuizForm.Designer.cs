@@ -95,7 +95,7 @@
             this.hoursTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoursTextBox.Location = new System.Drawing.Point(49, 346);
             this.hoursTextBox.Name = "hoursTextBox";
-            this.hoursTextBox.Size = new System.Drawing.Size(116, 32);
+            this.hoursTextBox.Size = new System.Drawing.Size(171, 32);
             this.hoursTextBox.TabIndex = 11;
             // 
             // minutesLabel
@@ -115,7 +115,7 @@
             this.minutesTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minutesTextBox.Location = new System.Drawing.Point(49, 427);
             this.minutesTextBox.Name = "minutesTextBox";
-            this.minutesTextBox.Size = new System.Drawing.Size(116, 32);
+            this.minutesTextBox.Size = new System.Drawing.Size(171, 32);
             this.minutesTextBox.TabIndex = 13;
             // 
             // label1
@@ -135,16 +135,18 @@
             this.secondsTextBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondsTextBox.Location = new System.Drawing.Point(49, 510);
             this.secondsTextBox.Name = "secondsTextBox";
-            this.secondsTextBox.Size = new System.Drawing.Size(116, 32);
+            this.secondsTextBox.Size = new System.Drawing.Size(171, 32);
             this.secondsTextBox.TabIndex = 15;
             // 
             // createQuizButton
             // 
             this.createQuizButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
-            this.createQuizButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createQuizButton.Location = new System.Drawing.Point(49, 578);
+            this.createQuizButton.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createQuizButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.createQuizButton.Image = global::Quiz_MDI_Application.Properties.Resources.btn_bg;
+            this.createQuizButton.Location = new System.Drawing.Point(49, 563);
             this.createQuizButton.Name = "createQuizButton";
-            this.createQuizButton.Size = new System.Drawing.Size(113, 51);
+            this.createQuizButton.Size = new System.Drawing.Size(171, 66);
             this.createQuizButton.TabIndex = 16;
             this.createQuizButton.Text = "CREATE";
             this.createQuizButton.UseVisualStyleBackColor = true;
