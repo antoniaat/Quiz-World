@@ -141,7 +141,7 @@
             // createQuizButton
             // 
             this.createQuizButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
-            this.createQuizButton.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createQuizButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createQuizButton.Location = new System.Drawing.Point(49, 578);
             this.createQuizButton.Name = "createQuizButton";
             this.createQuizButton.Size = new System.Drawing.Size(113, 51);
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(35F, 82F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1104, 687);
             this.Controls.Add(this.createQuizButton);

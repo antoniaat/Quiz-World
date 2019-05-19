@@ -39,7 +39,7 @@
             this.Login.BackColor = System.Drawing.SystemColors.HighlightText;
             this.Login.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
             this.Login.Font = new System.Drawing.Font("Calibri", 15F);
-            this.Login.Location = new System.Drawing.Point(297, 284);
+            this.Login.Location = new System.Drawing.Point(304, 232);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(129, 53);
             this.Login.TabIndex = 0;
@@ -53,7 +53,7 @@
             this.registerForm.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.quiz_app_background;
             this.registerForm.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerForm.ForeColor = System.Drawing.Color.Black;
-            this.registerForm.Location = new System.Drawing.Point(464, 284);
+            this.registerForm.Location = new System.Drawing.Point(459, 232);
             this.registerForm.Name = "registerForm";
             this.registerForm.Size = new System.Drawing.Size(137, 53);
             this.registerForm.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.quiz_app_background;
+            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.home_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(895, 574);

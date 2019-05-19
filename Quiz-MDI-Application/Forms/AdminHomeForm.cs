@@ -33,5 +33,12 @@ namespace Quiz_MDI_Application.Forms
             CreateQuizForm quizForm = new CreateQuizForm();
             quizForm.ShowDialog();
         }
+
+        private void AllQuizesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            HomeForm allQuizesForm = new HomeForm();
+            allQuizesForm.ShowDialog();
+        }
     }
 }

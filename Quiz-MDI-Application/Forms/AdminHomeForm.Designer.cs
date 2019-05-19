@@ -37,6 +37,9 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createQuizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allQuizesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +52,7 @@
             this.administrationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1104, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1104, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,16 +60,16 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fileToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.file_icon;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(71, 28);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(113, 28);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -75,48 +78,73 @@
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resultsToolStripMenuItem,
             this.logoutToolStripMenuItem});
-            this.userToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.user_icon;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(80, 28);
             this.userToolStripMenuItem.Text = "&User";
             // 
             // resultsToolStripMenuItem
             // 
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
-            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
+            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.resultsToolStripMenuItem.Text = "&Results";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(141, 28);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // administrationToolStripMenuItem
             // 
             this.administrationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createQuizToolStripMenuItem});
-            this.administrationToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createQuizToolStripMenuItem,
+            this.allQuizesToolStripMenuItem,
+            this.allResultsToolStripMenuItem,
+            this.allUsersToolStripMenuItem});
+            this.administrationToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.administrationToolStripMenuItem.Image = global::Quiz_MDI_Application.Properties.Resources.admin_ic;
             this.administrationToolStripMenuItem.Name = "administrationToolStripMenuItem";
-            this.administrationToolStripMenuItem.Size = new System.Drawing.Size(157, 27);
+            this.administrationToolStripMenuItem.Size = new System.Drawing.Size(167, 28);
             this.administrationToolStripMenuItem.Text = "&Administration";
             // 
             // createQuizToolStripMenuItem
             // 
+            this.createQuizToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createQuizToolStripMenuItem.Name = "createQuizToolStripMenuItem";
             this.createQuizToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
             this.createQuizToolStripMenuItem.Text = "&Create Quiz";
             this.createQuizToolStripMenuItem.Click += new System.EventHandler(this.CreateQuizToolStripMenuItem_Click);
+            // 
+            // allQuizesToolStripMenuItem
+            // 
+            this.allQuizesToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allQuizesToolStripMenuItem.Name = "allQuizesToolStripMenuItem";
+            this.allQuizesToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allQuizesToolStripMenuItem.Text = "&All Quizes";
+            this.allQuizesToolStripMenuItem.Click += new System.EventHandler(this.AllQuizesToolStripMenuItem_Click);
+            // 
+            // allResultsToolStripMenuItem
+            // 
+            this.allResultsToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allResultsToolStripMenuItem.Name = "allResultsToolStripMenuItem";
+            this.allResultsToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allResultsToolStripMenuItem.Text = "&All Results";
+            // 
+            // allUsersToolStripMenuItem
+            // 
+            this.allUsersToolStripMenuItem.Name = "allUsersToolStripMenuItem";
+            this.allUsersToolStripMenuItem.Size = new System.Drawing.Size(216, 28);
+            this.allUsersToolStripMenuItem.Text = "&All Users";
             // 
             // AdminHomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1104, 664);
             this.Controls.Add(this.menuStrip1);
@@ -143,5 +171,8 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createQuizToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allQuizesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allResultsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allUsersToolStripMenuItem;
     }
 }

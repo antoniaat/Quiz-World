@@ -88,6 +88,7 @@
             // loginButton
             // 
             this.loginButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.loginButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.Location = new System.Drawing.Point(125, 449);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(113, 51);
@@ -130,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1104, 664);
             this.Controls.Add(this.registerLink);

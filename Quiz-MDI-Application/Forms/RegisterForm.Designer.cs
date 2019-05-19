@@ -95,6 +95,7 @@
             // registerButton
             // 
             this.registerButton.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.registerButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.Location = new System.Drawing.Point(82, 507);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(134, 51);
@@ -125,6 +126,7 @@
             // 
             this.loginLinkLabel.ActiveLinkColor = System.Drawing.Color.DimGray;
             this.loginLinkLabel.AutoSize = true;
+            this.loginLinkLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLinkLabel.LinkColor = System.Drawing.Color.Black;
             this.loginLinkLabel.Location = new System.Drawing.Point(82, 576);
             this.loginLinkLabel.Name = "loginLinkLabel";
@@ -139,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources._17580;
+            this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1104, 664);
             this.Controls.Add(this.loginLinkLabel);
