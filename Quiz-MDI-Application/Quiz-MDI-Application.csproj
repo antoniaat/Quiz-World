@@ -58,10 +58,11 @@
     <Compile Include="Forms\AdminHomeForm.Designer.cs">
       <DependentUpon>AdminHomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CreateQuizForm.cs">
+    <Compile Include="Forms\Common\InputBox.cs" />
+    <Compile Include="Forms\Quiz\CreateQuizForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CreateQuizForm.Designer.cs">
+    <Compile Include="Forms\Quiz\CreateQuizForm.Designer.cs">
       <DependentUpon>CreateQuizForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomeForm.cs">
@@ -70,22 +71,22 @@
     <Compile Include="Forms\HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoginForm.cs">
+    <Compile Include="Forms\Common\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoginForm.Designer.cs">
+    <Compile Include="Forms\Common\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\QuizRezults.cs">
+    <Compile Include="Forms\Quiz\QuizRezults.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\QuizRezults.Designer.cs">
+    <Compile Include="Forms\Quiz\QuizRezults.Designer.cs">
       <DependentUpon>QuizRezults.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RegisterForm.cs">
+    <Compile Include="Forms\Common\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RegisterForm.Designer.cs">
+    <Compile Include="Forms\Common\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -105,19 +106,19 @@
     <EmbeddedResource Include="Forms\AdminHomeForm.resx">
       <DependentUpon>AdminHomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CreateQuizForm.resx">
+    <EmbeddedResource Include="Forms\Quiz\CreateQuizForm.resx">
       <DependentUpon>CreateQuizForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginForm.resx">
+    <EmbeddedResource Include="Forms\Common\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\QuizRezults.resx">
+    <EmbeddedResource Include="Forms\Quiz\QuizRezults.resx">
       <DependentUpon>QuizRezults.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegisterForm.resx">
+    <EmbeddedResource Include="Forms\Common\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -169,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\admin-ic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

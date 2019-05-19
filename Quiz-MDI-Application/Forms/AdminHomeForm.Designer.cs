@@ -154,6 +154,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminHomeForm";
             this.Text = "Admin Panel";
+            this.Load += new System.EventHandler(this.AdminHomeForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

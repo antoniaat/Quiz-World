@@ -29,7 +29,7 @@ namespace Quiz_MDI_Application.Forms
                 {
                     Username = username,
                     Password = password,
-                    Role = UserRole.User
+                    Role = UserRole.Admin
                 });
 
                 this.Visible = false;
