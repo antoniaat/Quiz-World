@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Quiz_MDI_Application.Forms;
 using System.Windows.Forms;
 
 namespace Quiz_MDI_Application
@@ -15,6 +8,12 @@ namespace Quiz_MDI_Application
         public LoginForm()
         {
             InitializeComponent();
+        }
+
+        private void RegisterLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.ShowDialog();
         }
     }
 }
