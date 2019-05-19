@@ -48,6 +48,7 @@ namespace Quiz_MDI_Application.Forms
                 addQuestion.Font = new Font("Calibri", 20.0f);
                 addQuestion.Size = new Size(buttonSizeX, buttonSizeY);
                 addQuestion.Location = new Point(currentButtonPositionX, currentButtonPositionY);
+
                 addQuestion.Click += (obj, args) => AddQuestionToQuiz(obj, args, quiz);
 
                 this.Controls.Add(quizDetailsButton);

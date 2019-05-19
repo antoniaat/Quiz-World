@@ -113,6 +113,26 @@ namespace Quiz_MDI_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_gradient {
+            get {
+                object obj = ResourceManager.GetObject("button-gradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_gradient1 {
+            get {
+                object obj = ResourceManager.GetObject("button-gradient1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_icon {
             get {
                 object obj = ResourceManager.GetObject("file-icon", resourceCulture);
