@@ -118,14 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="quiz-app-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quiz-app-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ranger-4df6c1b6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ranger-4df6c1b6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="17580" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\17580.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="admin-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="175801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\175801.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,7 +127,19 @@
   <data name="file-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="17580" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\17580.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quiz-app-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quiz-app-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ranger-4df6c1b6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ranger-4df6c1b6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin-ic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin-ic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
