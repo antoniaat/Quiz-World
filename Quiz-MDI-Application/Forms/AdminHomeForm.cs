@@ -43,12 +43,11 @@ namespace Quiz_MDI_Application.Forms
                 Button quizButton = new Button();
 
                 quizButton.Name = "AddQuestionsButton";
-                quizButton.Click += new EventHandler(AddQuestionsButton_Click);
                 quizButton.Text = "Add Questions";
                 quizButton.Font = new Font("Calibri", 20.0f);
                 quizButton.Size = new Size(buttonSizeX, buttonSizeY);
                 quizButton.Location = new Point(currentButtonPositionX, currentButtonPositionY);
-                //quizButton.Click += ""
+                quizButton.Click += (obj, args) => AddQuestionToQuiz(obj, args, quiz);
 
                 this.Controls.Add(quizInfo);
                 this.Controls.Add(quizButton);
@@ -58,12 +57,17 @@ namespace Quiz_MDI_Application.Forms
             }
         }
 
-        private void AddQuestionsButton_Click(object sender, System.EventArgs e)
+        private void AddQuestionToQuiz(object sender, EventArgs e, Quiz quiz)
         {
             string value = "New Question";
+
             if (InputBox.InputBoxContainer("New Question", "", ref value) == DialogResult.OK)
             {
-                //myDocument.Name = value;
+                Database.Questions.CreateQuestion(new Question
+                {
+                    Text = value,
+                    Quiz = quiz
+                });
             }
 
 
