@@ -4,8 +4,12 @@ namespace Quiz_MDI_Application.Models
 {
     public class Answer
     {
-        public String Text { get; set; }
         public int Id { get; set; }
+
+        public string Text { get; set; }
+
+        public bool IsCorrect { get; set; }
+
         public Question Question { get; set; }
     }
 }
