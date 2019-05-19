@@ -13,6 +13,7 @@ namespace Quiz_MDI_Application.Forms
 
         private void LoginLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Visible = false;
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
         }

@@ -13,6 +13,7 @@ namespace Quiz_MDI_Application.Forms
 
         private void RegisterLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Visible = false;
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
         }

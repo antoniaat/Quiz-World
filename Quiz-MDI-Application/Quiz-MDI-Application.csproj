@@ -195,5 +195,14 @@
   <ItemGroup>
     <None Include="Resources\home-background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-gradient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

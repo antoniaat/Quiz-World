@@ -63,6 +63,7 @@ namespace Quiz_MDI_Application.Forms
         {
             QuizDetails questionDetailsForm = new QuizDetails();
             questionDetailsForm.ShowDialog();
+            this.Visible = false;
         }
 
         private void AddQuestionToQuiz(object sender, EventArgs e, Quiz quiz)
@@ -77,6 +78,8 @@ namespace Quiz_MDI_Application.Forms
                     Quiz = quiz
                 });
             }
+
+            this.Visible = false;
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)

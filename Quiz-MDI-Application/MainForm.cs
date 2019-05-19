@@ -20,12 +20,14 @@ namespace Quiz_MDI_Application
         {
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
+            this.Visible = false;
         }
 
         private void registerForm_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
+            this.Visible = false;
         }
 
         private void MainFormTitle_TextChanged(object sender, EventArgs e)

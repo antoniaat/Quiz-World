@@ -65,9 +65,10 @@ namespace Quiz_MDI_Application.Forms
 
         private void AddAnswerToQuestion(object sender, EventArgs e, Question question)
         {
-            AddAnswerForm form = new AddAnswerForm();
+            AddAnswerForm form = new AddAnswerForm(question);
             form.Show();
-            this.Dispose();
+            this.Visible = false;
+            this.Close();
         }
 
         private void QuestionDetailsButton_Click(object sender, EventArgs e)
