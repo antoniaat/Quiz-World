@@ -83,6 +83,16 @@ namespace Quiz_MDI_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_icon {
+            get {
+                object obj = ResourceManager.GetObject("file-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap quiz_app_background {
             get {
                 object obj = ResourceManager.GetObject("quiz-app-background", resourceCulture);
@@ -96,6 +106,16 @@ namespace Quiz_MDI_Application.Properties {
         internal static System.Drawing.Bitmap ranger_4df6c1b6 {
             get {
                 object obj = ResourceManager.GetObject("ranger-4df6c1b6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_icon {
+            get {
+                object obj = ResourceManager.GetObject("user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
