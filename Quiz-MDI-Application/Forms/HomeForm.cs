@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using Quiz_MDI_Application.Data;
 using Quiz_MDI_Application.Models;
@@ -10,6 +10,8 @@ namespace Quiz_MDI_Application.Forms
 {
     public partial class HomeForm : Form
     {
+        private ICollection<Quiz> quizzes;
+
         public HomeForm()
         {
             InitializeComponent();
@@ -17,13 +19,39 @@ namespace Quiz_MDI_Application.Forms
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
-            ICollection<Quiz> quizzes = Database.Quizzes.ReadQuizzes();
+            this.quizzes = Database.Quizzes.ReadQuizzes();
+            this.UpdateQuizzes(this.quizzes);
+        }
+
+        private void ClearQuizzes()
+        {
+            List<Control> controlsToBeRemoved = new List<Control>();
+
+            foreach (Control control in this.Controls)
+            {
+                if (control.Tag != null && 
+                    (control.Tag.ToString() == "quizLabel" 
+                                            || control.Tag.ToString() == "quizButton"))
+                {
+                    controlsToBeRemoved.Add(control);
+                }
+            }
+
+            foreach (Control control in controlsToBeRemoved)
+            {
+                this.Controls.Remove(control);
+            }
+        }
+
+        private void UpdateQuizzes(ICollection<Quiz> quizzes)
+        {
+            this.ClearQuizzes();
 
             int currentLabelPositionX = 60;
-            int currentLabelPositionY = 60;
+            int currentLabelPositionY = 150;
 
             int currentButtonPositionX = 850;
-            int currentButtonPositionY = 60;
+            int currentButtonPositionY = 150;
 
             int labelSizeX = 750;
             int labelSizeY = 50;
@@ -35,6 +63,7 @@ namespace Quiz_MDI_Application.Forms
             {
                 Label quizLabel = new Label();
 
+                quizLabel.Tag = "quizLabel";
                 quizLabel.Text = quiz.Name + " - " + quiz.Hours + "h. " + quiz.Minutes + "m. " + quiz.Seconds + "s. ";
                 quizLabel.Font = new Font("Calibri", 20.0f);
                 quizLabel.Size = new Size(labelSizeX, labelSizeY);
@@ -42,6 +71,7 @@ namespace Quiz_MDI_Application.Forms
 
                 Button quizButton = new Button();
 
+                quizButton.Tag = "quizButton";
                 quizButton.Text = "Take Quiz";
                 quizButton.Font = new Font("Calibri", 20.0f);
                 quizButton.Size = new Size(buttonSizeX, buttonSizeY);
@@ -82,6 +112,22 @@ namespace Quiz_MDI_Application.Forms
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SearchTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchQuery = this.searchTextBox1.Text;
+
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                this.UpdateQuizzes(this.quizzes);
+            }
+            else
+            {
+                this.UpdateQuizzes(this.quizzes
+                    .Where(quiz => quiz.Name.ToLower().Contains(searchQuery.ToLower()))
+                    .ToList());
+            }
         }
     }
 }

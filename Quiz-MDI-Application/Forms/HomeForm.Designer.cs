@@ -36,6 +36,8 @@
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchTextBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +106,27 @@
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
+            // searchTextBox1
+            // 
+            this.searchTextBox1.Font = new System.Drawing.Font("Calibri", 20F);
+            this.searchTextBox1.Location = new System.Drawing.Point(60, 90);
+            this.searchTextBox1.Name = "searchTextBox1";
+            this.searchTextBox1.Size = new System.Drawing.Size(950, 48);
+            this.searchTextBox1.TabIndex = 1;
+            this.searchTextBox1.TextChanged += new System.EventHandler(this.SearchTextBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(60, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 41);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Search";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(35F, 82F);
@@ -111,6 +134,8 @@
             this.BackgroundImage = global::Quiz_MDI_Application.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1100, 660);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.searchTextBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Calibri", 40.2F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -136,5 +161,7 @@
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resultsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.TextBox searchTextBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
