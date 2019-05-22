@@ -106,5 +106,10 @@ namespace Quiz_MDI_Application.Forms
             HomeForm allQuizesForm = new HomeForm();
             allQuizesForm.ShowDialog();
         }
+
+        private void administrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
