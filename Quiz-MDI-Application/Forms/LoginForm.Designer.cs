@@ -1,4 +1,6 @@
-﻿namespace Quiz_MDI_Application.Forms
+﻿using System.Windows.Forms;
+
+namespace Quiz_MDI_Application.Forms
 {
     partial class LoginForm
     {
@@ -73,6 +75,8 @@
             // 
             this.passwordTextBox.Location = new System.Drawing.Point(125, 375);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.CharacterCasing = CharacterCasing.Lower;
             this.passwordTextBox.Size = new System.Drawing.Size(243, 36);
             this.passwordTextBox.TabIndex = 3;
             // 
